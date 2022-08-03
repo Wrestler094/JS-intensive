@@ -1,0 +1,51 @@
+.main-wrapper {
+    height: 100vh;
+}
+
+.section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.nav-scroller .nav {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    text-align: center;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+.form-sign {
+    max-width: 330px;
+    padding: 15px;
+}
+
+.form-sign .form-floating:focus-within {
+    z-index: 2;
+}
+
+.form-sign input[type="text"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-sign input[type="text"].signup {
+    margin-bottom: -1px;
+    border-radius: 0;
+}
+.form-sign input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+input[type="password"].signup {
+    margin-bottom: -1px;
+    border-radius: 0;
+}

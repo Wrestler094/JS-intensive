@@ -1,0 +1,9 @@
+.App {
+  margin: 0 auto;
+  text-align: center;
+  min-height: 100%;
+}
+
+.App--light{
+  background-color: #292929;
+}

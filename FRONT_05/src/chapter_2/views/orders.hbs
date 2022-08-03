@@ -1,0 +1,28 @@
+<h1 class="menu__title">{{title}}</h1>
+<div class="orders__container">
+    <form class="orders__form" action="/action_page.php">
+        <label class="orders__label" for="waiter">Choose waiter id</label>
+        <select class="orders__input" id="waiter" name="waiter">
+            {{#each waiters}}
+                <option value="{{this.dataValues.id}}">
+                    {{this.dataValues.id}} - {{this.dataValues.name}}
+                </option>
+            {{/each}}
+        </select>
+
+        <label class="orders__label" for="waiter">Choose menu item</label>
+        <select class="orders__input" id="menuItem" name="menuItem" multiple>
+            {{#each menu}}
+                <option value="{{this.dataValues.id}}">
+                    {{this.dataValues.title}}
+                </option>
+            {{/each}}
+        </select>
+
+        <div class="orders__inner-container">
+            <input class="orders__submit-button orders__submit-button--cancel js-cancel" type="submit" value="Cancel">
+            <input class="orders__submit-button js-submit" type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+<script src="/javascripts/orders.js"></script>

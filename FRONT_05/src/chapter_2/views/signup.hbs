@@ -1,0 +1,28 @@
+<h1 class="menu__title">Registration</h1>
+<div class="orders__container">
+    <form class="orders__form" action="/action_page.php">
+        <label class="orders__label" for="login">Login</label>
+        <input class="orders__input" id="login" name="login">
+
+        <label class="orders__label" for="password">Password</label>
+        <input class="orders__input" id="password" name="password" multiple="">
+
+        <label class="orders__label" for="repassword">Repeat password</label>
+        <input class="orders__input" id="repassword" name="repassword" multiple="">
+
+        <div>
+            <input type="radio" id="waiter" name="role" value="waiter" checked>
+            <label for="contactChoice1">Waiter</label>
+
+            <input type="radio" id="admin" name="role" value="admin">
+            <label for="contactChoice2">Admin</label>
+        </div>
+
+        <p style="text-align: center">Already have an account? <a href="/signin">Sign in</a></p>
+
+        <div class="orders__inner-container">
+            <input class="orders__submit-button js-submit" type="submit" value="Sign up">
+        </div>
+    </form>
+</div>
+<script src="/javascripts/signup.js"></script>

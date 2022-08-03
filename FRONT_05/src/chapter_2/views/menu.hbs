@@ -1,0 +1,16 @@
+<h1 class="menu__title">{{title}}</h1>
+<div class="menu__container">
+    {{#each menu}}
+        <div>
+            <img src="{{this.dataValues.picture}}" alt="{{this.dataValues.description}}">
+            <div class="menu__inner-container">
+                <h2>{{this.dataValues.title}}</h2>
+                <p class="menu__price">{{this.dataValues.cost}}₽</p>
+            </div>
+            <div class="menu__inner-container ">
+                <p class="menu__description">{{this.dataValues.description}}</p>
+                <p class="menu__kcal">{{this.dataValues.cost}} kcal</p>
+            </div>
+        </div>
+    {{/each}}
+</div>

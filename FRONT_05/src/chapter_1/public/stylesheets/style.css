@@ -1,0 +1,189 @@
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100%;
+  min-width: 320px;
+  margin: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+/* Main page */
+
+.main-page__container {
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.main-page__title {
+  font-size: 32px;
+}
+
+.main-page__welcome {
+  font-size: 18px;
+}
+
+.show-orders-input {
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
+.show-orders {
+  font-size: 14px;
+  padding: 10px 20px;
+}
+
+.index-root {
+  max-width: 1200px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.index-root__title {
+  text-align: center;
+}
+
+.index-root__link {
+  text-decoration: none;
+}
+
+.index-root__list {
+  background-color: aliceblue;
+  padding: 20px 40px;
+  border-radius: 10px;
+  line-height: 22px;
+  color: black;
+  text-decoration: none;
+}
+
+/* Menu page */
+
+.menu__title {
+  font-size: 40px;
+  text-align: center;
+}
+
+.menu__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.menu__inner-container {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.menu__description {
+  margin-top: 0;
+}
+
+.menu__price {
+  margin-left: auto;
+}
+
+.menu__kcal {
+  margin-top: 0;
+  margin-left: auto;
+}
+
+/* Order ID page */
+
+.order-cost {
+  grid-column: 3;
+  text-align: right;
+}
+
+.order-button {
+  cursor: pointer;
+  padding: 10px 20px;
+}
+
+/* Orders page */
+
+.orders__container {
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.orders__inner-container {
+  display: flex;
+  justify-content: flex-end
+}
+
+.orders__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.orders__label {
+  padding-left: 5px;
+}
+
+.orders__input {
+  margin: 15px 0;
+  padding: 10px;
+}
+
+.orders__submit-button {
+  width: min-content;
+  background-color: #56af4c;
+  color: white;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.orders__submit-button--cancel {
+  background-color: #dc4b40;
+  margin-right: 10px;
+}
+
+.orders__submit-button:hover {
+  opacity: 0.8;
+}
+
+.orders__submit-button:active {
+  opacity: 0.6;
+}
+
+.errors-page {
+  text-align: center;
+}

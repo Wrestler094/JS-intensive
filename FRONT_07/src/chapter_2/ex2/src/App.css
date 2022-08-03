@@ -1,0 +1,32 @@
+.App {
+    text-align: center;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.dev-photo {
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.menu-button {
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-button:hover {
+    opacity: 0.8;
+}
+
+.menu-button:active {
+    opacity: 0.6;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+}

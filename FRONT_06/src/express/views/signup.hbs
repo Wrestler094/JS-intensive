@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/auth.css">
+    <title>{{title}}</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+<div class="main-wrapper">
+    <div class="section">
+        <main class="form-sign w-100 m-auto">
+            <form method="post" id="signUpForm" action="/signup">
+                <h1 class="h3 mb-3 fw-normal">Please sign up</h1>
+                <div class="form-floating">
+                    <input type="text" class="form-control" id="floatingLogin" placeholder="Login" name="login">
+                    <label for="floatingLogin">Login</label>
+                </div>
+                <div class="form-floating">
+                    <input type="text" class="form-control signup" id="floatingName" placeholder="Name" name="name">
+                    <label for="floatingName">Name</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control signup" id="floatingPassword" placeholder="Password" name="password">
+                    <label for="floatingPassword">Password</label>
+                </div>
+                <div class="form-floating">
+                    <input type="password" class="form-control" id="floatingRePassword" placeholder="RePassword" name="repassword">
+                    <label for="floatingRePassword">RePassword</label>
+                </div>
+                <button type="submit" class="w-75 btn btn-lg btn-primary" id="btnSubmit">Sign up</button>
+                <a href="/signin">Sign in</a>
+            </form>
+        </main>
+    </div>
+</div>
+<script src="js/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</body>
+<html></html>
+</html>
